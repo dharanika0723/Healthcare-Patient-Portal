@@ -1,0 +1,485 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef5fb;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header{
+
+    height:80px;
+
+    background:linear-gradient(135deg,#0d6efd,#37a2ff);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    color:#fff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.notification-btn{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.notification-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+#logoutBtn{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#fff;
+
+    color:#0d6efd;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#logoutBtn:hover{
+
+    background:#dceeff;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    display:flex;
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+
+    width:270px;
+
+    min-height:calc(100vh - 80px);
+
+    background:#fff;
+
+    padding:30px;
+
+    box-shadow:5px 0 20px rgba(0,0,0,.08);
+
+}
+
+.sidebar h2{
+
+    color:#0d6efd;
+
+    font-size:30px;
+
+    margin-bottom:35px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    border-radius:12px;
+
+    font-size:19px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar li:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    transform:translateX(8px);
+
+}
+
+.active{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.content{
+
+    flex:1;
+
+    padding:40px;
+
+}
+
+/* ==========================================
+   REPORT HEADER
+========================================== */
+
+.report-header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.report-header h1{
+
+    color:#0d6efd;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.report-header p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   SUMMARY CARDS
+========================================== */
+
+.report-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h2{
+
+    font-size:42px;
+
+    color:#0d6efd;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   ACTIVITY SECTION
+========================================== */
+
+.activity-section{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.activity-section h2{
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+th{
+
+    padding:16px;
+
+    font-size:18px;
+
+}
+
+td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+    font-size:16px;
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:#f5faff;
+
+}
+
+/* ==========================================
+   DOWNLOAD BUTTON
+========================================== */
+
+.download-section{
+
+    margin-top:35px;
+
+    text-align:center;
+
+}
+
+#downloadReport{
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#downloadReport:hover{
+
+    background:#0056d2;
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:950px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.sidebar{
+
+    width:100%;
+
+    min-height:auto;
+
+}
+
+.content{
+
+    padding:20px;
+
+}
+
+.header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+    gap:15px;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+}
+
+.report-header h1{
+
+    font-size:32px;
+
+}
+
+.report-header p{
+
+    font-size:16px;
+
+}
+
+.card h2{
+
+    font-size:34px;
+
+}
+
+th,
+td{
+
+    font-size:15px;
+
+    padding:12px;
+
+}
+
+}
