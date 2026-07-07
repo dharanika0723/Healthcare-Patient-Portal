@@ -140,6 +140,7 @@ document.getElementById("profileImageInput").addEventListener("change", function
 // ======================================
 
 document.getElementById("uploadImageBtn").addEventListener("click", function () {
+    console.log("Upload button clicked");
 
     const fileInput = document.getElementById("profileImageInput");
 
@@ -152,6 +153,7 @@ document.getElementById("uploadImageBtn").addEventListener("click", function () 
     }
 
     const formData = new FormData();
+    console.log("Upload button clicked");
 
     formData.append("patient_id", user.id);
 
