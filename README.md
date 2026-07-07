@@ -1,87 +1,230 @@
-# Healthcare Patient Portal
+# 🏥 Healthcare Patient Portal
 
-## Project Overview
+## 📖 Project Description
 
-The Healthcare Patient Portal is a UI/UX design project created to improve the healthcare experience for patients. This application helps users manage appointments, access medical records, view prescriptions, receive notifications, and communicate with healthcare providers through a simple and user-friendly interface.
+The **Healthcare Patient Portal** is a full-stack web application developed to streamline healthcare services by providing patients with a secure and user-friendly platform. The system enables patients to register, log in, manage their personal information, book appointments, access medical records, view prescriptions, and update their profiles through an intuitive interface.
 
-## Project Type
+The project demonstrates modern web development practices by integrating a responsive frontend with a Node.js/Express backend and a MySQL database, while following RESTful API architecture and secure authentication techniques.
 
-UI/UX Design Internship Project
+---
 
-## Designed By
+# 🌐 Live Demo
+
+**Backend (Render):**
+
+https://healthcare-patient-portal.onrender.com
+
+**Frontend:**
+
+Run locally using VS Code Live Server or deploy to GitHub Pages/Netlify.
+
+---
+
+# 📸 Screenshots
+
+> Replace these image paths with your actual screenshots.
+
+### Login Page
+![Login Page](images/hospital.jpg)
+
+### Patient Dashboard
+![register](images/doctor.png)
+
+### Profile Management
+![Profile](images/profile.png)
+
+---
+
+# ✨ Features
+
+- Secure User Registration
+- Patient Login Authentication
+- Dashboard Overview
+- Profile Management
+- Profile Picture Upload
+- Appointment Booking
+- View Medical Records
+- View Prescriptions
+- Reports Section
+- Change Password
+- Responsive User Interface
+- MySQL Database Integration
+- REST API Architecture
+- Secure Password Encryption using bcrypt
+- Backend Deployment using Render
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+## Backend
+
+- Node.js
+- Express.js
+
+## Database
+
+- MySQL
+
+## Libraries & Packages
+
+- bcrypt
+- multer
+- cors
+- dotenv
+- mysql2
+
+## Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- XAMPP
+- Postman
+
+## Deployment
+
+- Render
+- FreeSQLDatabase
+
+---
+
+# 📂 Project Structure
+
+```
+Healthcare-Patient-Portal
+│
+├── backend
+│   ├── server.js
+│   ├── db.js
+│   ├── package.json
+│   ├── uploads
+│   └── .env
+│
+├── week-2
+│   ├── css
+│   ├── js
+│   ├── images
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── profile.html
+│   ├── appointment.html
+│   ├── medicalrecords.html
+│   ├── prescriptions.html
+│   ├── reports.html
+│   └── settings.html
+│
+└── README.md
+```
+
+---
+
+# ⚙️ Setup Instructions
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/dharanika0723/Healthcare-Patient-Portal.git
+```
+
+## 2. Navigate to Backend
+
+```bash
+cd Healthcare-Patient-Portal/backend
+```
+
+## 3. Install Dependencies
+
+```bash
+npm install
+```
+
+## 4. Configure Environment Variables
+
+Create a `.env` file inside the backend folder.
+
+```env
+DB_HOST=your_database_host
+DB_USER=your_database_username
+DB_PASSWORD=your_database_password
+DB_NAME=your_database_name
+DB_PORT=3306
+
+PORT=5000
+```
+
+## 5. Start Backend Server
+
+```bash
+npm start
+```
+
+or
+
+```bash
+node server.js
+```
+
+## 6. Run Frontend
+
+Open the project in **Visual Studio Code**.
+
+Right-click:
+
+```
+login.html
+```
+
+Select:
+
+```
+Open with Live Server
+```
+
+The application will open in your browser.
+
+---
+
+# 🔒 Security Features
+
+- Password Hashing using bcrypt
+- Secure REST API Communication
+- Environment Variable Configuration
+- MySQL Database Authentication
+- CORS Protection
+
+---
+
+# 🚀 Future Enhancements
+
+- Doctor Dashboard
+- Admin Panel
+- Online Payments
+- Email Notifications
+- Video Consultation
+- JWT Authentication
+- Cloud Image Storage
+- Mobile Responsive Improvements
+
+---
+
+# 👩‍💻 Author
 
 **Dharanika**
 
-## Objective
+Healthcare Patient Portal Project
 
-To design a modern and accessible healthcare platform that allows patients to manage their healthcare services efficiently from a mobile device.
+UI/UX Design Internship Project
 
-## Problem Statement
+---
 
-Healthcare organizations generate large amounts of patient data that must be cleaned, analyzed, and processed before it can be used for decision-making.
+# 📄 License
 
-The goal of this project is to build a Healthcare Patient Portal data pipeline that performs data preprocessing, feature engineering, and machine learning preparation. This helps improve data quality and supports future predictive healthcare applications.
-
-## Dataset Source
-
-Dataset Name: Healthcare Dataset
-
-Source: Kaggle
-
-Link: https://www.kaggle.com/
-
-The dataset contains patient-related healthcare information such as demographics, medical history, hospital details, billing information, and admission records.
-
-## Approach
-
-The project follows a structured data science workflow:
-
-1. Data Collection
-   - Obtain healthcare patient dataset.
-
-2. Data Exploration
-   - Analyze dataset structure.
-   - Identify missing values and data distributions.
-
-3. Data Cleaning
-   - Remove duplicate records.
-   - Handle missing values.
-   - Correct data types.
-
-4. Feature Engineering
-   - Create derived features.
-   - Encode categorical variables.
-   - Scale numerical features.
-
-5. Data Preparation
-   - Split data into training and testing sets.
-
-6. Model Development
-   - Train machine learning models.
-   - Evaluate model performance.
-
-7. Deployment Preparation
-   - Save processed datasets and trained models for future integration into a healthcare patient portal.
-
-## Key Features
-
-* User Login and Registration
-* Patient Dashboard
-* Appointment Booking
-* Doctor Profiles
-* Medical Records Management
-* Prescription Tracking
-* Health Reports
-* Notifications and Reminders
-* User Profile Management
-* Teleconsultation Interface
-
-## Tools Used
-
-* Figma
-* GitHub
-* Visual Studio Code  
-
-## Project Status
-
-In Progress
+This project is developed for educational and internship purposes.
